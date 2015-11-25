@@ -1,0 +1,108 @@
+body
+{
+    margin:20px;
+    background: url(../Image/Background.jpg);
+    background-size: 100%;
+    color: white;
+}
+
+.title
+{
+    padding-top: 5px;
+}
+
+#date_time
+{
+    white-space: nowrap;
+    font-family: 'Trebuchet MS',sans-serif;
+    font-size: 19px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.bay1
+{
+    width:82%;
+    height:80%;
+    float:left;
+    margin-top:20px;
+    border: 2px solid #002599;
+}
+
+.bay1_row1,
+.bay1_row2
+{
+    height:50%;
+}
+
+.bay1_r1_r2
+{
+    background-image:url(../Image/Patient_Bed.gif);
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    width: 25%;
+    vertical-align: top;
+}
+
+.inside_bay1
+{
+    width: 265px;
+    border: 1px dotted #002599;
+    height: 235px;
+}
+
+.inside_bay1 td
+{
+    vertical-align: top;
+}
+
+.bed_title
+{
+    font-size: 22px;
+    font-family: 'Trebuchet MS',sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.empty_co
+{
+    height:100px;
+}
+
+.button
+{
+    height: 100%;
+    width: 100%;
+}
+
+.working_staff
+{
+    width: 15%;
+    height:80%;
+    float:right;
+    margin-top: 20px;
+    text-align: center;
+    border: 2px solid #002599;
+}
+
+.working_staff td
+{
+    border: 1px dotted #002599;
+}
+
+.s1
+{
+    
+}
+
+.s2
+{
+    
+}
+
+.s3
+{
+    
+}
