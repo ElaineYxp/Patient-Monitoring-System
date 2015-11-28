@@ -5,12 +5,86 @@ body
     background-size: 100%;
     color: white;
 }
-
+#detailBox1,
+#detailBox2,
+#detailBox3,
+#detailBox4,
+#detailBox5,
+#detailBox6,
+#detailBox7,
+#detailBox8
+{
+    position: fixed;
+    display: none;
+    top: 30%;
+    left: 31%;
+    margin-top: -50px;
+    height: 300px;
+    width: 500px;
+    background-color: black;
+    border: 2px solid white;
+    z-index: 10;
+    font-family: 'Trebuchet MS',sans-serif;
+}
+#detailBox1 div 
+#detailBox2 div 
+#detailBox3 div 
+#detailBox4 div 
+#detailBox5 div 
+#detailBox6 div 
+#detailBox7 div 
+#detailBox8 div 
+{
+    padding: 10px;
+}
+.confirm-detail-button
+{
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    padding: 15px 20px;
+    display: block;
+    width: 45%;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:15px;
+}
+.confirm-detail-button:hover
+{
+    color: black;
+    border-color: black;
+    background-color: white;
+    font-weight: bold;
+    cursor:pointer;
+}
+.detailForm
+{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.detail-title
+{
+    text-align: center;
+    font-family: 'Trebuchet MS',sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+.detail-table
+{
+    width:100%;
+}
+.detail-table td
+{
+    width:50%;
+}
 .title
 {
     padding-top: 5px;
 }
-
 #date_time
 {
     white-space: nowrap;
@@ -20,7 +94,6 @@ body
     font-weight: bold;
     text-decoration: none;
 }
-
 .bay1
 {
     width:82%;
@@ -29,13 +102,11 @@ body
     margin-top:20px;
     border: 2px solid #002599;
 }
-
 .bay1_row1,
 .bay1_row2
 {
     height:50%;
 }
-
 .bay1_r1_r2
 {
     background-image:url(../Image/Patient_Bed.gif);
@@ -45,19 +116,16 @@ body
     width: 25%;
     vertical-align: top;
 }
-
 .inside_bay1
 {
     width: 265px;
     border: 1px dotted #002599;
     height: 235px;
 }
-
 .inside_bay1 td
 {
     vertical-align: top;
 }
-
 .bed_title
 {
     font-size: 22px;
@@ -65,18 +133,24 @@ body
     font-weight: bold;
     text-align: center;
 }
-
+.left_col
+{
+    float: left;
+}
 .empty_co
 {
     height:100px;
 }
-
-.button
+.expandButton
 {
-    height: 100%;
-    width: 100%;
+    height: 30px;
+    margin-top: 65px;
+    margin-right: 220px;
 }
-
+.expandButton:hover
+{
+    cursor: pointer;
+}
 .working_staff
 {
     width: 15%;
@@ -86,23 +160,7 @@ body
     text-align: center;
     border: 2px solid #002599;
 }
-
 .working_staff td
 {
     border: 1px dotted #002599;
-}
-
-.s1
-{
-    
-}
-
-.s2
-{
-    
-}
-
-.s3
-{
-    
 }
