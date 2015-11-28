@@ -1,4 +1,8 @@
-
+<jsp:include page="/detailBox.jsp" />
+<%@page import="java.io.*"%>
+<%@page import="java.util.*"%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
 <html>
     <head>
         <title>Patient Monitoring System</title>
@@ -6,6 +10,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="CSS/style.css">
         <script type="text/javascript" src="Javascript/date_time.js"></script>
+        <script type="text/javascript" src="Javascript/patient_detail.js"></script>
+        <script type="text/javascript" src="Javascript/bed1.js"></script>
+        <script type="text/javascript" src="Javascript/bed2.js"></script>
+        <script type="text/javascript" src="Javascript/bed3.js"></script>
+        <script type="text/javascript" src="Javascript/bed4.js"></script>
+        <script type="text/javascript" src="Javascript/bed5.js"></script>
+        <script type="text/javascript" src="Javascript/bed6.js"></script>
+        <script type="text/javascript" src="Javascript/bed7.js"></script>
+        <script type="text/javascript" src="Javascript/bed8.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     </head>
     <body style="font-family: 'Trebuchet MS',sans-serif;">
         <center>
@@ -27,16 +41,20 @@
                                 <td>&nbsp;Name&emsp;&emsp;&emsp;&emsp;&nbsp;: </td>
                             </tr>
                             <tr>
-                                <td>&nbsp;Pulse rate&emsp;&emsp;&nbsp;: </td>
+                                <td>
+                                    <div class="left_col">&nbsp;Pulse rate&emsp;&emsp;&nbsp;: &nbsp;</div>
+                                    <div id="pulseBed1"></div>
+                                </td>
                             </tr>
                             <tr>
-                                <td>&nbsp;Temperature&emsp;: </td>
+                                <td>
+                                    <div class="left_col">&nbsp;Temperature&emsp;: &nbsp;</div>
+                                    <div id="temperatureBed1"></div>
+                                </td>
                             </tr>
                             <tr>
                                 <td class="empty_co">
-                                    <div class="button">
-                                        
-                                    </div>
+                                    <img class="expandButton" src ="Image/arrow.png" alt="Expand Arrow" onclick="showBox('detailBox1')">
                                 </td>
                             </tr>
                         </table>
@@ -50,16 +68,20 @@
                                 <td>&nbsp;Name&emsp;&emsp;&emsp;&emsp;&nbsp;: </td>
                             </tr>
                             <tr>
-                                <td>&nbsp;Pulse rate&emsp;&emsp;&nbsp;: </td>
+                                <td>
+                                    <div class="left_col">&nbsp;Pulse rate&emsp;&emsp;&nbsp;: &nbsp;</div>
+                                    <div id="pulseBed2"></div>
+                                </td>
                             </tr>
                             <tr>
-                                <td>&nbsp;Temperature&emsp;: </td>
+                                <td>
+                                    <div class="left_col">&nbsp;Temperature&emsp;: &nbsp;</div>
+                                    <div id="temperatureBed2"></div>
+                                </td>
                             </tr>
                             <tr>
                                 <td class="empty_co">
-                                    <div class="button">
-                                        
-                                    </div>
+                                    <img class="expandButton" src ="Image/arrow.png" alt="Expand Arrow" onclick="showBox('detailBox2')">
                                 </td>
                             </tr>
                         </table>
@@ -73,16 +95,20 @@
                                 <td>&nbsp;Name&emsp;&emsp;&emsp;&emsp;&nbsp;: </td>
                             </tr>
                             <tr>
-                                <td>&nbsp;Pulse rate&emsp;&emsp;&nbsp;: </td>
+                                <td>
+                                    <div class="left_col">&nbsp;Pulse rate&emsp;&emsp;&nbsp;: &nbsp;</div>
+                                    <div id="pulseBed3"></div>
+                                </td>
                             </tr>
                             <tr>
-                                <td>&nbsp;Temperature&emsp;: </td>
+                                <td>
+                                    <div class="left_col">&nbsp;Temperature&emsp;: &nbsp;</div>
+                                    <div id="temperatureBed3"></div>
+                                </td>
                             </tr>
                             <tr>
                                 <td class="empty_co">
-                                    <div class="button">
-                                        
-                                    </div>
+                                    <img class="expandButton" src ="Image/arrow.png" alt="Expand Arrow" onclick="showBox('detailBox3')">
                                 </td>
                             </tr>
                         </table>
@@ -96,16 +122,20 @@
                                 <td>&nbsp;Name&emsp;&emsp;&emsp;&emsp;&nbsp;: </td>
                             </tr>
                             <tr>
-                                <td>&nbsp;Pulse rate&emsp;&emsp;&nbsp;: </td>
+                                <td>
+                                    <div class="left_col">&nbsp;Pulse rate&emsp;&emsp;&nbsp;: &nbsp;</div>
+                                    <div id="pulseBed4"></div>
+                                </td>
                             </tr>
                             <tr>
-                                <td>&nbsp;Temperature&emsp;: </td>
+                                <td>
+                                    <div class="left_col">&nbsp;Temperature&emsp;: &nbsp;</div>
+                                    <div id="temperatureBed4"></div>
+                                </td>
                             </tr>
                             <tr>
                                 <td class="empty_co">
-                                    <div class="button">
-                                        
-                                    </div>
+                                    <img class="expandButton" src ="Image/arrow.png" alt="Expand Arrow" onclick="showBox('detailBox4')">
                                 </td>
                             </tr>
                         </table>
@@ -121,16 +151,20 @@
                                 <td>&nbsp;Name&emsp;&emsp;&emsp;&emsp;&nbsp;: </td>
                             </tr>
                             <tr>
-                                <td>&nbsp;Pulse rate&emsp;&emsp;&nbsp;: </td>
+                                <td>
+                                    <div class="left_col">&nbsp;Pulse rate&emsp;&emsp;&nbsp;: &nbsp;</div>
+                                    <div id="pulseBed5"></div>
+                                </td>
                             </tr>
                             <tr>
-                                <td>&nbsp;Temperature&emsp;: </td>
+                                <td>
+                                    <div class="left_col">&nbsp;Temperature&emsp;: &nbsp;</div>
+                                    <div id="temperatureBed5"></div>
+                                </td>
                             </tr>
                             <tr>
                                 <td class="empty_co">
-                                    <div class="button">
-                                        
-                                    </div>
+                                    <img class="expandButton" src ="Image/arrow.png" alt="Expand Arrow" onclick="showBox('detailBox5')">
                                 </td>
                             </tr>
                         </table>
@@ -144,16 +178,20 @@
                                 <td>&nbsp;Name&emsp;&emsp;&emsp;&emsp;&nbsp;: </td>
                             </tr>
                             <tr>
-                                <td>&nbsp;Pulse rate&emsp;&emsp;&nbsp;: </td>
+                                <td>
+                                    <div class="left_col">&nbsp;Pulse rate&emsp;&emsp;&nbsp;: &nbsp;</div>
+                                    <div id="pulseBed6"></div>
+                                </td>
                             </tr>
                             <tr>
-                                <td>&nbsp;Temperature&emsp;: </td>
+                                <td>
+                                    <div class="left_col">&nbsp;Temperature&emsp;: &nbsp;</div>
+                                    <div id="temperatureBed6"></div>
+                                </td>
                             </tr>
                             <tr>
                                 <td class="empty_co">
-                                    <div class="button">
-                                        
-                                    </div>
+                                    <img class="expandButton" src ="Image/arrow.png" alt="Expand Arrow" onclick="showBox('detailBox6')">
                                 </td>
                             </tr>
                         </table>
@@ -167,16 +205,20 @@
                                 <td>&nbsp;Name&emsp;&emsp;&emsp;&emsp;&nbsp;: </td>
                             </tr>
                             <tr>
-                                <td>&nbsp;Pulse rate&emsp;&emsp;&nbsp;: </td>
+                                <td>
+                                    <div class="left_col">&nbsp;Pulse rate&emsp;&emsp;&nbsp;: &nbsp;</div>
+                                    <div id="pulseBed7"></div>
+                                </td>
                             </tr>
                             <tr>
-                                <td>&nbsp;Temperature&emsp;: </td>
+                                <td>
+                                    <div class="left_col">&nbsp;Temperature&emsp;: &nbsp;</div>
+                                    <div id="temperatureBed7"></div>
+                                </td>
                             </tr>
                             <tr>
                                 <td class="empty_co">
-                                    <div class="button">
-                                        
-                                    </div>
+                                    <img class="expandButton" src ="Image/arrow.png" alt="Expand Arrow" onclick="showBox('detailBox7')">
                                 </td>
                             </tr>
                         </table>
@@ -190,16 +232,20 @@
                                 <td>&nbsp;Name&emsp;&emsp;&emsp;&emsp;&nbsp;: </td>
                             </tr>
                             <tr>
-                                <td>&nbsp;Pulse rate&emsp;&emsp;&nbsp;: </td>
+                                <td>
+                                    <div class="left_col">&nbsp;Pulse rate&emsp;&emsp;&nbsp;: &nbsp;</div>
+                                    <div id="pulseBed8"></div>
+                                </td>
                             </tr>
                             <tr>
-                                <td>&nbsp;Temperature&emsp;: </td>
+                                <td>
+                                    <div class="left_col">&nbsp;Temperature&emsp;: &nbsp;</div>
+                                    <div id="temperatureBed8"></div>
+                                </td>
                             </tr>
                             <tr>
                                 <td class="empty_co">
-                                    <div class="button">
-                                        
-                                    </div>
+                                    <img class="expandButton" src ="Image/arrow.png" alt="Expand Arrow" onclick="showBox('detailBox8')">
                                 </td>
                             </tr>
                         </table>
